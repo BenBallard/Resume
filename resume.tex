@@ -1,0 +1,118 @@
+
+\documentclass[10pt,a4paper,oneside]{article}
+\pagestyle{empty}
+
+\NeedsTeXFormat{LaTeX2e}
+\RequirePackage{calc}
+\RequirePackage{ifthen}
+\RequirePackage{url}
+\RequirePackage{tabularx}
+\RequirePackage{pgf}
+\RequirePackage{pgfshade}
+\RequirePackage{xxcolor}
+\RequirePackage{multicol}
+\RequirePackage{textcomp}
+\usepackage{pifont}
+
+\setlength{\parindent}{0cm}
+
+\newcommand{\name}{\textsc{Benjamin D. Ballard}}
+%pifont allows for the dings
+% which could make cool bullets and such
+\newcommand{\address}{250 Hidden Ridge Court APT 202\hspace{2px}\textbullet\hspace{2px}South Park, PA 15129\hspace{2px}\textbullet\hspace{2px}(330)340-4751}
+\newcommand{\email}{\textsc{Ben.D.Ballard@Gmail.com}}
+
+\newcommand{\SkillItem}[2]{\hspace*{.5in}#1\hfill\begin{minipage}[t]{5in} #2 \end{minipage}\\}
+
+\newcommand{\SectionHeader}[1]{\textsc{#1} \vspace{-2px}\\}
+\newcommand{\CollegeHeader}[2]{\hspace*{.52in}{\bf#1} \hfill #2 \\}
+\newcommand{\CompanyHeader}[4]{\hspace*{.52in}{\bf#1} \hfill #2 \\\hspace*{.5in}\emph{#3}\hfill (#4) \\}
+\newcommand{\ResumeItem}[1]{\hspace*{.5in}\textopenbullet\hspace*{.2in}#1\\}
+
+
+\newcommand{\TextBlock}[1]
+{\hspace*{.5in} \begin{minipage}[t]{6.75in} #1 \end{minipage}\\}
+
+
+\newcommand{\ResumeHeader}{
+\begin{center}
+{
+
+\linespread{0}
+
+\Huge{\textsc{\name}}
+
+\small
+\nointerlineskip \vspace{4px}%
+  \hspace{\fill}
+\rule{7.25in}{1px}
+ \par\nointerlineskip \vspace{\baselineskip}
+\nointerlineskip \vspace{0px}%
+  \hspace{\fill}
+\rule{7.25in}{1px}
+ \par \nointerlineskip \vspace{1px}
+ \address \par \nointerlineskip \vspace{\baselineskip}
+ \email
+}
+\end{center}
+}
+
+ % \offinterlineskip
+
+%\baselineskip=0pt \lineskiplimit=-\maxdimen
+
+\newlength{\headerbuffer}
+\setlength{\headerbuffer}{2pt}
+\setlength{\textheight}{1px}
+\RequirePackage[top=.5in,bottom=.5in,left=.5in,right=.5in]{geometry}
+\begin{document}
+\ResumeHeader
+\vspace{-12px}
+
+\SectionHeader{Objective}
+\TextBlock{Obtain a challenging, fast paced, permanent position in the field of robotics engineering that offers potential to utilize and advance my technical skills.}
+\SectionHeader{Education}
+\CollegeHeader{Case Western Reserve University}{Cleveland, OH}
+\TextBlock{Major: Computer Engineering \hfill (Fall 2006 - May  2010)}
+\TextBlock{GPA: 3.45}
+\SectionHeader{Related Course Work}
+\TextBlock{Mobile Robotics, Computational Perception, Artificial Intelligence, Intro to Operating Systems, Computer Architecture, Systems Programming, Intro to Databases, Digital System Design, Logic Design and Computer Organization, Circuits , Intro to Data Structures, Discrete Mathematics}
+\SectionHeader{Computer Skills}
+\SkillItem{Operating System:}{Linux (Gentoo, Ubuntu, Debian), Windows, VxWorks}
+\SkillItem{Programming Languages:}{C/C++, C\#, Java (w/Swing), Groovy, Python, PIC assembly, Visual Basic 6.0, AutoIt, PHP (w/MySQL), HTML/CSS, Javascript, Labview}
+\SkillItem{Programming Tools:}{GIT, \LaTeX, SVN, CVS, Eclipse, Visual Studio,NetBeans , Gcc, Mysql}
+\SectionHeader{Work Experiance}
+\CompanyHeader{Bechtel Marine Propulsion Company}{West Mifflin, PA}{Associate Engineer}{July 2010 \textendash { Present}}
+\ResumeItem{Developed real time software for embedded systems and software build procedures}
+\CompanyHeader{Codonics}{Middleburg Heights, OH}{Software Engineering Intership}{May 2009 \textendash
+ { }August 2009}
+ \ResumeItem{Extended the encryption feature, added new features and, fixed bugs in the software}
+ \ResumeItem{Participated in code reviews to verify quality of production software}
+ \CompanyHeader{Codonics}{Middleburg Heights, OH}{Software Engineering Intership}{May 2008 \textendash
+ { }December 2008}
+ \ResumeItem{Developed and implemented encryption support to meet United Kingdom healthcare standards}
+ \ResumeItem{Verified product performance and usability through hardware and software testing}
+ \ResumeItem{Used Ruby, AutoIt, Java, and Groovy for development of automated testing and production software} 
+ \ResumeItem{Discovered critical software glitch in ``would be released'' software safeguarding the company reputation}
+\SectionHeader{Activities}
+\CompanyHeader{Intelligent Ground Vehicle Competition}{}{Position State Observer Lead (2009,2010)}{Spring 2009 \textendash { }Summer 2010}
+ \ResumeItem{Implemented a Kalman Filter to acquire and fuse 4 sensors reading together}
+ \ResumeItem{Designed real time software that supported multiple robotic platforms and sensor configurations}
+ \ResumeItem{Worked on a team of 4+ engineering students, and integrated code from others into the software}
+ \ResumeItem{Developed a goal point creator in ROS (robot operating system) for the IGVC competition}
+ \ResumeItem{Compared the A*, D* and D* lite path planning algorithms for my class AI project in support of IGVC}
+ \CompanyHeader{Design Build Fly/DBF}{}{Electronic and Proplusion Lead (2007-2008)}{Fall 2006 \textendash { }Spring 2010}
+ \ResumeItem{Responsible for selecting batteries and motor combinations to support the final aircraft design}
+ \ResumeItem{Working on a design and construction team of 10+ people to design and build the plane}
+ \ResumeItem{Used Ruby, AutoIt, Java, and Groovy for development of automated testing and production software} 
+\ResumeItem{Designed and implemented PIC microcontroller based solution to fulfill requirements}
+\SectionHeader{Volunteer Experiance}
+ \CompanyHeader{Alpha Phi Omega (National Service Fraternity)}{}{Brother, Webmaster, and Server Administrator}{Fall 2006 \textendash { }Spring 2008}
+ \ResumeItem{Provided website support and restored MySQL database after errors occurred}
+\SectionHeader{Awards \& Honors}
+\TextBlock{Boy Scouts of America Eagle Scout Award Recipient}
+\TextBlock{Voted by my peers in ACM to be most likely to have a highly successful professional career}
+\TextBlock{$\eta\kappa\nu$ (Eta Kappa Nu Electrical and Computer Engineering Honor Society)}
+\SectionHeader{Interests}
+\TextBlock{Coding, Gaming, Golfing, and Driving my family’s Jeep Wrangler}
+\end{document}
