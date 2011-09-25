@@ -14,7 +14,7 @@
 \newlength{\headerbuffer}
 \setlength{\headerbuffer}{2pt}
 \setlength{\textheight}{1px}
-\RequirePackage[letterpaper,top=.5in,bottom=.5in,left=.5in,right=.5in]{geometry}
+\RequirePackage[letterpaper,top=.5in,bottom=.3in,left=.5in,right=.5in]{geometry}
 %\RequirePackage[letterpaper]{geometry}
 
 \setlength{\parindent}{0cm}
@@ -22,10 +22,10 @@
 \newcommand{\name}{\textsc{Benjamin D. Ballard}}
 %pifont allows for the dings
 % which could make cool bullets and such
-\newcommand{\address}{\footnotesize 250 Hidden Ridge Court APT 202\hspace{2px}\textbullet\hspace{2px}South Park, PA 15129\hspace{2px}\textbullet\hspace{2px}(330)340-4751}
+\newcommand{\address}{\footnotesize 250-202 Hidden Ridge Court\hspace{2px}\textbullet\hspace{2px}South Park, PA 15129\hspace{2px}\textbullet\hspace{2px}(330)340-4751}
 \newcommand{\email}{\textsc{Ben.D.Ballard@Gmail.com}}
 
-\newcommand{\SkillItem}[2]{\hspace*{.5in}#1\hfill\begin{minipage}[t]{5in} #2 \end{minipage}\\}
+\newcommand{\SkillItem}[2]{\hspace*{.5in}#1\hfill\begin{minipage}[t]{5.5in} #2 \end{minipage}\\}
 
 \newcommand{\SectionHeader}[1]{\textsc{#1} \vspace{-2px}\\}
 \newcommand{\CollegeHeader}[2]{\hspace*{.52in}{\bf#1} \hfill #2 \\}
@@ -66,10 +66,10 @@
 
 \begin{document}
 \ResumeHeader
-\vspace{-12px}
+\vspace{-15px}
 
 \SectionHeader{Objective}
-\TextBlock{Obtain a challenging, fast paced, permanent position in the field of robotics engineering that offers potential to utilize and advance my technical skills.}
+\TextBlock{Obtain a challenging, and fast paced position in the field of robotics engineering that offers potential to utilize and advance my technical skills.}
 \SectionHeader{Education}
 \CollegeHeader{Case Western Reserve University}{Cleveland, OH}
 \TextBlock{Major: Computer Engineering GPA:3.45 \hfill (Fall 2006 - May 2010)}
@@ -77,33 +77,35 @@
 \TextBlock{Mobile Robotics, Computational Perception, Artificial Intelligence, Intro to Operating Systems, Computer Architecture, Systems Programming, Digital System Design, Intro to Data Structures}
 \SectionHeader{Computer Skills}
 \SkillItem{Operating System:}{Linux (Gentoo, Ubuntu, Debian), Windows, VxWorks}
-\SkillItem{Programming Languages:}{C/C++, C\#, Java (w/Swing), Groovy, Python, PIC assembly, Visual Basic 6.0, AutoIt, PHP (w/MySQL), HTML/CSS, Javascript, Labview}
-\SkillItem{Programming Tools:}{GIT, \LaTeX, SVN, CVS, Eclipse, Visual Studio, NetBeans, Gcc, Mysql}
-\SectionHeader{Work Experiance}
-\CompanyHeader{Bechtel Marine Propulsion Company}{West Mifflin, PA}{Associate Engineer}{July 2010 \textendash { Present}}
-\ResumeItem{Developed real time software for saftey critical embedded systems}
-\ResumeItem{Developed simulation and unit testing tools to support debugging of embedded software}
-\CompanyHeader{Carnegie Robotics}{Pittsburgh, PA}{Consultant}{July 2011 \textendash { August 2011}}
-\ResumeItem{Implemented and tuned a PID controler to control the robot base over a UDP interface}
-\ResumeItem{Created a serial driver to interface with a Pan, Tilt, and Zoom Camera}
-\CompanyHeader{Codonics}{Middleburg Heights, OH}{Software Engineering Intership}{May 2009 \textendash
+%\SkillItem{Programming Languages:}{C/C++, C\#, Java (w/Swing), Groovy, Python, PIC assembly, Visual Basic 6.0, AutoIt, PHP (w/MySQL), HTML/CSS, Javascript, Labview}
+\SkillItem{Fluent:}{C, C++, C\#, Java, Groovy, Python}
+\SkillItem{Proficient:}{Groovy, Python, Ruby, AutoIt, PHP (w/MySQL), HTML/CSS, JavaScript, Labview}
+\SkillItem{Programming Tools:}{GIT, Mercurial, SVN, Make, Eclipse, Visual Studio, NetBeans, GCC, \LaTeX}
+\SectionHeader{Work Experience}
+\CompanyHeader{Bechtel Marine Propulsion Company (Bettis Atomic Power Laboratory)}{West Mifflin, PA}{Associate Engineer, DOE Security Clearance}{July 2010 \textendash { Present}}
+\ResumeItem{Developed real time protection grade software to safeguard safety critical (I\&{C}) embedded systems}
+\ResumeItem{Designed automated simulation and unit testing tools to support debugging of embedded software}
+\CompanyHeader{Carnegie Robotics}{Pittsburgh, PA}{Engineering Consultant}{July 2011 \textendash { August 2011}}
+\ResumeItem{Implemented and tuned a PID controller for the directional velocities of a Talon robot over UDP}
+\ResumeItem{Developed an API and interface to generate serial commands for the Pan, Tilt, and Zoom Camera}
+\CompanyHeader{Codonics}{Middleburg Heights, OH}{Software Engineering Internship}{May 2009 \textendash
  { }August 2009}
- \ResumeItem{Extended the encryption feature, added new features and, fixed bugs in the software}
- \ResumeItem{Participated in code reviews to verify quality of production software}
+ \ResumeItem{Enhanced and debugged the encryption options to support new features, and workflows}
+ \ResumeItem{Participated in code reviews and testing of software to verify quality of production software}
  \CompanyHeader{Codonics}{Middleburg Heights, OH}{Software Engineering Coop}{May 2008 \textendash
  { }December 2008}
- \ResumeItem{Developed and implemented encryption support to meet United Kingdom healthcare standards}
+ \ResumeItem{Developed and implemented encryption feature to meet United Kingdom healthcare standards}
  \ResumeItem{Verified product performance and usability through hardware and software testing}
- \ResumeItem{Used Ruby, AutoIt, Java, and Groovy for development of automated testing and production software} 
+ \ResumeItem{Produced automated testing and production software to perform tasks and log results overnight} 
  \ResumeItem{Discovered critical software glitch in a pending release preventing customer support issues}
 \SectionHeader{Activities}
 \CompanyHeader{Intelligent Ground Vehicle Competition (IGVC)}{}{Sensor Fusion/Localization Lead (2009,2010)}{Spring 2009 \textendash { }Summer 2010}
  \ResumeItem{Implemented a Kalman Filter to acquire and fuse 4 sensors base state reading together}
  \ResumeItem{Designed real time software that supported multiple robotic platforms and sensor configurations}
- \ResumeItem{Worked on a team of 4+ engineering students, and integrated code from others into the software}
+ \ResumeItem{Integrated code from a team of 4+ engineering students into the sofTalontware}
  \ResumeItem{Developed a goal point planner in ROS (Robot Operating System)}
- \ResumeItem{Compared the A*, D* and D* lite path planning algorithms}
- \CompanyHeader{Design Build Fly/DBF}{}{Electronic and Proplusion Lead (2007-2008)}{Fall 2006 \textendash { }Spring 2010}
+ \ResumeItem{Compared performance of the A*, D* and D* lite path planning algorithms}
+ \CompanyHeader{Design Build Fly/DBF}{}{Electronic and Propulsion Lead (2007-2008)}{Fall 2006 \textendash { }Spring 2010}
  \ResumeItem{Responsible for selecting batteries and motor combinations to support the final aircraft design}
 \ResumeItem{Designed and implemented PIC microcontroller solution to multiplex PWM signals for airplane}
 \SectionHeader{Awards \& Honors}
@@ -111,5 +113,5 @@
 \TextBlock{Voted by my peers in ACM to be most likely to have a highly successful professional career}
 \TextBlock{$HKN$ (Eta Kappa Nu Electrical and Computer Engineering Honor Society)}
 \SectionHeader{Interests}
-\TextBlock{Coding, Gaming, Golfing, and Driving my family’s Jeep Wrangler}
+\TextBlock{Coding, Gaming, Golfing, and Driving my family's Jeep Wrangler}
 \end{document}
