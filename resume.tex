@@ -27,8 +27,8 @@
 
 \newcommand{\SkillItem}[2]{\hspace*{.5in}#1\hfill\begin{minipage}[t]{5.6in} #2 \end{minipage}\\}
 \newcommand{\SectionHeader}[1]{\textsc{#1} \vspace{-2px}\\}
-\newcommand{\CollegeHeader}[2]{\hspace*{.52in}{\bf#1} \hfill #2 \\}
-\newcommand{\CompanyHeader}[4]{\hspace*{.52in}{\bf#1} \hfill #2 \\\hspace*{.5in}\emph{#3}\hfill (#4) \\}
+\newcommand{\CollegeHeader}[2]{\hspace*{.52in}{\bf#1} \hfill #2 \vspace{-3px} \\}
+\newcommand{\CompanyHeader}[4]{\hspace*{.52in}{\bf#1} \hfill #2 \\\hspace*{.5in}\emph{#3}\hfill (#4) \vspace{-2px} \\}
 \newcommand{\ResumeItem}[1]{\hspace*{.5in}\textopenbullet\hspace*{.2in}#1\\}
 
 
@@ -65,7 +65,7 @@
 
 \begin{document}
 \ResumeHeader
-\vspace{-13px}
+\vspace{-16px}
 
 \SectionHeader{Objective}
 \TextBlock{Obtain a challenging, and fast paced position in the field of robotics engineering that offers potential to utilize and advance my technical skills.}
@@ -79,10 +79,11 @@
 %\SkillItem{Programming Languages:}{C/C++, C\#, Java (w/Swing), Groovy, Python, PIC assembly, Visual Basic 6.0, AutoIt, PHP (w/MySQL), HTML/CSS, Javascript, Labview}
 \SkillItem{Fluent:}{C, C++, C\#, Java, Python}
 \SkillItem{Proficient:}{Groovy, Ruby, AutoIt, PHP (w/MySQL), HTML/CSS, JavaScript, Labview}
-\SkillItem{Programming Tools:}{Git, Mercurial, SVN, Make, Eclipse, Visual Studio, NetBeans, GCC, \LaTeX}
+\SkillItem{Programming Tools:}{Git, Mercurial, SVN, Make, Eclipse, Visual Studio, Waf, GCC, \LaTeX}
 \SectionHeader{Work Experience}
 \CompanyHeader{Seegrid}{Pittsburgh, PA}{Software Developer}{February 2012  \textendash { Present}}
-\ResumeItem{Implemented robotic stuff}
+\ResumeItem{Successfully developed and demoed a robotic intersection control application at VW Salzgitter }
+\ResumeItem{Debugged problems with robots and was the main engineering contact for the largest installation site}
 \CompanyHeader{Bechtel Marine Propulsion Company (Bettis Atomic Power Laboratory)}{West Mifflin, PA}{Associate Engineer, DOE Security Clearance}{July 2010 \textendash { February 2012}}
 \ResumeItem{Developed real time protection grade software to safeguard safety critical I\&{C} embedded systems}
 \ResumeItem{Designed automated simulation and unit testing tools to support debugging of embedded software}
@@ -98,12 +99,12 @@
  \ResumeItem{Developed and implemented encryption feature to meet United Kingdom healthcare standards}
  \ResumeItem{Verified product performance and usability through hardware and software testing}
  \ResumeItem{Produced automated testing and production software to perform tasks and log results overnight} 
- \ResumeItem{Discovered critical software glitch in a pending release preventing customer support issues}
+% \ResumeItem{Discovered critical software glitch in a pending release preventing customer support issues}
 \SectionHeader{Activities}
 \CompanyHeader{Intelligent Ground Vehicle Competition (IGVC)}{}{Sensor Fusion/Localization Lead (2009,2010)}{Spring 2009 \textendash { }Summer 2010}
  \ResumeItem{Implemented a Kalman Filter to acquire and fuse 4 state sensors reading together}
  \ResumeItem{Designed real time software that supported multiple  robot bases and sensor configurations}
- \ResumeItem{Integrated code from a team of 4+ engineering students into the software}
+%\ResumeItem{Integrated code from a team of 4+ engineering students into the software}
  \ResumeItem{Developed a goal point planner in ROS (Robot Operating System)}
  \ResumeItem{Compared performance of the A*, D* and D* lite path planning algorithms}
  \CompanyHeader{Design Build Fly/DBF}{}{Electronic and Propulsion Lead (2007-2008)}{Fall 2006 \textendash { }Spring 2010}
@@ -112,7 +113,7 @@
 \SectionHeader{Awards \& Honors}
 \TextBlock{Boy Scouts of America Eagle Scout Award Recipient}
 \TextBlock{Voted by my peers in ACM to be the most likely to have a highly successful professional career}
-\TextBlock{$HKN$ (Eta Kappa Nu Electrical and Computer Engineering Honor Society)}
+%\TextBlock{$HKN$ (Eta Kappa Nu Electrical and Computer Engineering Honor Society)}
 \SectionHeader{Interests}
-\TextBlock{Coding, Gaming, Golfing, and Driving my family's Jeep Wrangler}
+\TextBlock{Coding, Gaming, Goglfing, and Driving my family's Jeep Wrangler}
 \end{document}
